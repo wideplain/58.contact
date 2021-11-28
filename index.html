@@ -4,10 +4,31 @@
     <script src="https://kit.fontawesome.com/574d6ea9de.js" crossorigin="anonymous"></script>
     <title>菊地広野 きくちこうや - 58.contact</title>
     <style>
-        body,h1,h2,h3,h4 {
+        body,
+        h1,
+        h2,
+        h3,
+        h4 {
             display: block;
             margin: 0px;
         }
+
+        header {
+            position: fixed;
+            bottom: 0;
+            background-color: rgba(71, 71, 71, 0.8);
+            width: 100%;
+            color: white;
+        }
+
+        header a {
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+        }
+
         .flex-center {
             display: flex;
             align-items: center;
@@ -27,43 +48,82 @@
             margin: 8px;
         }
 
+        .margin-4 {
+            margin: 4px;
+        }
+
         .padding-8 {
+            padding: 8px;
+        }
+
+        .padding-4 {
             padding: 8px;
         }
 
         .icon {
             font-size: 20px;
         }
+
+        .gallery {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gallery-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 16px;
+        }
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 
 <body>
     <div class="container flex-center flex-column">
-        <h1 class="margin-8" style="font-size: 18px;">菊地 広野</h1>
-        <h2 class="" style="font-size: 12px;">きくち こうや</h2>
-        <h2 class="" style="font-size: 12px;">Koya kikuchi</h2>
-        <div class="flex-center margin-8">
-            <a class="margin-8 icon" style="display: block;" href="https://twitter.com/wideplain" target="_blank" rel="noopener">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="https://www.instagram.com/koya_kikuchi/" target="_blank" rel="noopener">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="https://youtube.com/user/Wideplain11?sub_confirmation=1" target="_blank" rel="noopener">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="https://www.facebook.com/hirobirowide" target="_blank" rel="noopener">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="https://note.com/wideplain/" target="_blank" rel="noopener">
-                <i class="far fa-sticky-note" style="transform: rotate(180deg);"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="mailto:mail@wideplain.com" target="_blank" rel="noopener">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a class="padding-8 icon" style="display: block;" href="tel:07083062715" target="_blank" rel="noopener">
-                <i class="fas fa-phone"></i>
-            </a>
-        </div>
+        <header class="padding-8">
+            <div class="flex-center">
+                <h1 class="margin-8" style="font-size: 18px;">KOYA KIKUCHI</h1>
+                <div class="flex-center margin-4">
+                    <a class="margin-4 icon" style="display: block;" href="https://twitter.com/wideplain"
+                        target="_blank" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;" href="https://www.instagram.com/koya_kikuchi/"
+                        target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;"
+                        href="https://youtube.com/user/Wideplain11?sub_confirmation=1" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;" href="https://www.facebook.com/hirobirowide"
+                        target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;" href="https://note.com/wideplain/" target="_blank"
+                        rel="noopener">
+                        <i class="far fa-sticky-note" style="transform: rotate(180deg);"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;" href="mailto:mail@wideplain.com" target="_blank"
+                        rel="noopener">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a class="padding-4 icon" style="display: block;" href="tel:07083062715" target="_blank"
+                        rel="noopener">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="gallery">
+                <picture class="lozad">
+                    <source srcset="img/DSC07207.webp" />
+                    <source srcset="img/DSC07207.jpg" />
+                    <img class="gallery-img" />
+                    <picture>
+            </div>
+        </main>
     </div>
 </body>
