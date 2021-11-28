@@ -537,18 +537,41 @@ header h1 {
 }
 
 .gallery h2 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     margin: 16px 0 8px 4px;
     width: 100%;
 }
 
 .gallery h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin: 16px 0 8px 4px;
+    margin: 16px 0 4px 4px;
     width: 100%;
 }
+
+.gallery h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 0 8px 4px;
+    width: 100%;
+}
+
+.gallery .table_of_contents {
+    width: 100%;
+    list-style: none;
+}
+
+.gallery .table_of_contents li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 4px 8px 4px;
+}
+
+.gallery .table_of_contents li a {
+    text-decoration: underline;
+}
+
 
 .gallery-caption {
     display: inline-block;
