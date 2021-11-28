@@ -552,8 +552,10 @@ header h1 {
 }
 
 .profile-content {
-    margin-bottom: 74px;
+    padding-bottom: 74px;
 }
+
+
 
 .profile h2 {
     font-size: 24px;
@@ -588,6 +590,11 @@ header h1 {
     .profile-header {
         width: 200px;
         display: block;
+    }
+    .profile-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
