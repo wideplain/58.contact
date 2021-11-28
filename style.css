@@ -523,7 +523,7 @@ header h1 {
 .main-menu li a {
     font-weight: bold;
     display: inline-block;
-    padding: 0 16px;
+    padding: 2px 16px;
 }
 
 .main-container {
@@ -537,6 +537,7 @@ header h1 {
 
 .profile {
     line-height: 1.4;
+    color: #080808;
 }
 
 .gallery-img {
@@ -550,10 +551,25 @@ header h1 {
     border-radius: 100px;
 }
 
+.profile-content {
+    margin-bottom: 74px;
+}
+
 .profile h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
+}
+
+.profile h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 16px 16px 16px;
+}
+
+.profile a {
+    color: #080808;
+    text-decoration: underline;
 }
 
 .profile .ruby {
@@ -572,5 +588,14 @@ header h1 {
     .profile-header {
         width: 200px;
         display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.8em;
+    }
+    .icon {
+        font-size: 0.97em;
     }
 }
