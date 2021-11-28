@@ -453,20 +453,11 @@ body {
 header {
     position: fixed;
     bottom: 0;
-    background-color: rgba(71, 71, 71, 0.6);
+    background-color: rgba(71, 71, 71, 0.5);
+    backdrop-filter: blur(5px);
     width: 100%;
     color: white;
-}
-
-header:before {
-    content: '';
-    filter: blur(5px);
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
+    overflow: hidden;
 }
 
 header a {
@@ -491,6 +482,11 @@ header h1 {
     flex-direction: column;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -502,6 +498,10 @@ header h1 {
 
 .margin-4 {
     margin: 4px;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
 }
 
 .padding-8 {
@@ -533,6 +533,27 @@ header h1 {
 
 .gallery {
     width: 100%;
+    padding-bottom: 84px;
+}
+
+.gallery h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 16px 0 8px 4px;
+    width: 100%;
+}
+
+.gallery h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0 8px 4px;
+    width: 100%;
+}
+
+.gallery-caption {
+    display: inline-block;
+    color: darkgray;
+    margin-left: 4px;
 }
 
 .profile {
@@ -543,6 +564,12 @@ header h1 {
 .gallery-img {
     max-width: 100%;
     height: auto;
+    object-fit: scale-down;
+}
+
+.gallery-page-image {
+    width: calc(50% - 4px);
+    margin: 2px;
 }
 
 .profile-img {
@@ -605,4 +632,4 @@ header h1 {
     .icon {
         font-size: 0.97em;
     }
-}
+}}
